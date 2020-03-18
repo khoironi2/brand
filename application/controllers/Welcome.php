@@ -126,8 +126,7 @@ class Welcome extends CI_Controller
 		$emailContent .= '<hr>';  //   Post message available here
 		$emailContent .= 'Terimakasih sudah melakukan pembelian' . $nama_p;  //   Post message available here
 		$emailContent .= '<hr>';  //   Post message available here
-		$emailContent .= 'Email Customer' . $email;  //   Post message available here
-		$emailContent .= '<hr>';  //   Post message available here
+
 		$emailContent .= 'Total Harga' . $harga_p;  //   Post message available here
 		$emailContent .= '<hr>';  //   Post message available here
 		$emailContent .= 'Silahkan melalkukan pembayaran ke rekening berikut';  //   Post message available here
@@ -143,8 +142,6 @@ class Welcome extends CI_Controller
 
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#fad000;color: #ffffff;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://khoironi.net' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.khoironi.net</a></p></td></tr></table></body></html>";
-
-
 
 		$config['protocol']    = 'smtp';
 		$config['smtp_host']    = 'ssl://smtp.gmail.com';
