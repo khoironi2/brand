@@ -111,7 +111,7 @@
 								<div class="card-body">
 									<h5 class="card-title"><?php echo $p->nama_p; ?></h5>
 									<p class="card-text"><?php echo $p->namajp; ?>
-										<a class="badge badge-success"> 9 Terjual</a>
+										<a style="color: aliceblue" class="badge badge-success"> 9 Terjual</a>
 									</p>
 
 									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
