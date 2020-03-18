@@ -106,10 +106,10 @@ class Welcome extends CI_Controller
 		}
 		redirect();
 	}
-	public function sendMail($email)
+	public function sendMail($email, $namalengkap)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
-		$subject = 'Welcome To CodingMantra';
+		$subject = 'NEW CUSTOMER' . $namalengkap;
 
 		$from = 'pass your email ID';              // Pass here your mail id
 
