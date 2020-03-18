@@ -112,7 +112,7 @@ class Welcome extends CI_Controller
 		// $to =  $this->input->post('from');  // User email pass here
 		$subject = 'PT TECHTOUP';
 
-		$from = 'muhammadronias@gmail.com';              // Pass here your mail id
+		$from = 'admin@khoironi.net';              // Pass here your mail id
 
 		$emailContent = '<!DOCTYPE><html><head></head><body><table width="600px" style="border:1px solid #cccccc;margin: auto;border-spacing:0;"><tr><td style="background:#fad000;padding-left:3%"><img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 /></td></tr>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
@@ -141,12 +141,12 @@ class Welcome extends CI_Controller
 
 
 		$config['protocol']    = 'smtp';
-		$config['smtp_host']    = 'ssl://smtp.gmail.com';
+		$config['smtp_host']    = 'mail.khoironi.net';
 		$config['smtp_port']    = '465';
 		$config['smtp_timeout'] = '60';
 
-		$config['smtp_user']    = 'muhammadronias@gmail.com';    //Important
-		$config['smtp_pass']    = 'hjm0hsol3h';  //Important
+		$config['smtp_user']    = 'admin@khoironi.net';    //Important
+		$config['smtp_pass']    = ',Z{OGut~6pJ^';  //Important
 
 		$config['charset']    = 'utf-8';
 		$config['newline']    = "\r\n";
