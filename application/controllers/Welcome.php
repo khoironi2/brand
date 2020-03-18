@@ -141,29 +141,19 @@ class Welcome extends CI_Controller
 		$config['mailtype'] = 'html'; // or html
 		$config['validation'] = TRUE; // bool whether to validate email or not 
 
-		foreach ($list as $emailContent => $address) {
-			$this->email->clear();
 
-			$this->email->initialize($config);
-			$this->email->set_mailtype("html");
-			$this->email->from($from);
-			$this->email->to($address);
-			$this->email->subject($subject);
-			$this->email->message($emailContent);
-			$this->email->send();
-			$this->session->set_flashdata('msg', "Mail has been sent successfully");
-			$this->session->set_flashdata('msg_class', 'alert-success');
-			return redirect();
-		}
 
-		// $this->email->initialize($config);
-		// $this->email->set_mailtype("html");
-		// $this->email->from($from);
-		// $this->email->to($admin);
-		// $this->email->subject($subject);
-		// $this->email->message($emailContent);
-		// $this->email->send();
+		$this->email->initialize($config);
+		$this->email->set_mailtype("html");
+		$this->email->from($from);
+		$this->email->to($list);
+		$this->email->subject($subject);
+		$this->email->message($emailContent);
+		$this->email->send();
 
+		$this->session->set_flashdata('msg', "Mail has been sent successfully");
+		$this->session->set_flashdata('msg_class', 'alert-success');
+		return redirect();
 	}
 
 
