@@ -145,7 +145,8 @@ class Welcome extends CI_Controller
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
 		$this->email->from($from);
-		$this->email->to($admin, $admin2);
+		$this->email->to($admin);
+		$this->email->to($admin2);
 		$this->email->subject($subject);
 		$this->email->message($emailContent);
 		$this->email->send();
