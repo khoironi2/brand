@@ -110,7 +110,7 @@ class Welcome extends CI_Controller
 	public function send($email,  $namalengkap, $harga_p, $nama_p)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
-		$subject = 'Welcome To CodingMantra';
+		$subject = 'PT TECHTOUP';
 
 		$from = 'muhammadronias@gmail.com';              // Pass here your mail id
 
