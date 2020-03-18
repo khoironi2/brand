@@ -86,7 +86,7 @@ class Welcome extends CI_Controller
 			$namalengkap    = $this->input->post('nama_lengkap');
 			$nama_p    = $this->input->post('nama_p');
 			$harga_p    = $this->input->post('harga_p');
-			$list = array('mr.rojer46@gmail.com', 'masrony37@gmail.com');
+
 			$datamember = array(
 				'harga_p' 		=> $this->input->post('harga_p'),
 				'support' 	=> $this->input->post('support'),
@@ -101,15 +101,16 @@ class Welcome extends CI_Controller
 			);
 
 			$this->M_product->insert($datamember);
-			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p, $list);
+			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p);
 			echo "Mantappp";
 		}
 		redirect();
 	}
-	public function sendMail($email, $namalengkap, $list)
+	public function sendMail($email, $namalengkap)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
-		$admin = 'mr.rojer46@gmail.com';
+		$list = array('mr.rojer46@gmail.com', 'masrony37@gmail.com');
+		// $admin = 'mr.rojer46@gmail.com';
 
 		$subject = 'NEW CUSTOMER : ' . $namalengkap;
 
@@ -143,11 +144,16 @@ class Welcome extends CI_Controller
 		foreach ($list as $emailContent => $address) {
 			$this->email->clear();
 
-			$this->email->to($address);
+			$this->email->initialize($config);
+			$this->email->set_mailtype("html");
 			$this->email->from($from);
-			$this->email->subject('Here is your info ');
-			$this->email->message('Hi ' . $emailContent . ' Here is the info you requested.');
+			$this->email->to($address);
+			$this->email->subject($subject);
+			$this->email->message($emailContent);
 			$this->email->send();
+			$this->session->set_flashdata('msg', "Mail has been sent successfully");
+			$this->session->set_flashdata('msg_class', 'alert-success');
+			return redirect();
 		}
 
 		// $this->email->initialize($config);
@@ -158,9 +164,6 @@ class Welcome extends CI_Controller
 		// $this->email->message($emailContent);
 		// $this->email->send();
 
-		$this->session->set_flashdata('msg', "Mail has been sent successfully");
-		$this->session->set_flashdata('msg_class', 'alert-success');
-		return redirect();
 	}
 
 
