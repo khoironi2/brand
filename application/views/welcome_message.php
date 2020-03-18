@@ -112,6 +112,7 @@
 									<h5 class="card-title"><?php echo $p->nama_p; ?></h5>
 									<p class="card-text"><?php echo $p->namajp; ?></p>
 									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
+									<button type="button" class="btn btn-outline-warning">DEMO</button>
 									<button type="button" class="btn btn-success">
 										Terjual <span class="badge badge-light">9</span>
 									</button>
