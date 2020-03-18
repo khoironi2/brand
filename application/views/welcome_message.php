@@ -110,9 +110,8 @@
 								<img src="<?php echo $p->url_img; ?>" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title"><?php echo $p->nama_p; ?></h5>
-									<p class="card-text"><?php echo $p->namajp; ?> 9 Terjual <div class="spinner-grow spinner-grow-sm" role="status">
-											<span class="sr-only">Loading...</span>
-										</div>
+									<p class="card-text"><?php echo $p->namajp; ?>
+										<a class="badge badge-success"> 9 Terjual</a>
 									</p>
 
 									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
