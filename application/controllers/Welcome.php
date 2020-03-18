@@ -117,7 +117,7 @@ class Welcome extends CI_Controller
 
 		$from = 'pass your email ID';              // Pass here your mail id
 
-		$emailContent = '<!DOCTYPE><html><head></head><body><table width="600px" style="border:1px solid #cccccc;margin: auto;border-spacing:0;"><tr><td style="background:#fad000;padding-left:3%"><img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 /></td></tr>';
+		$emailContent = '<img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 />';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 
 
