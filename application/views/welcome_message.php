@@ -110,11 +110,8 @@
 								<img src="<?php echo $p->url_img; ?>" class="card-img-top" alt="...">
 								<div class="card-body">
 									<h5 class="card-title"><?php echo $p->nama_p; ?></h5>
-									<p class="card-text"><?php echo $p->namajp; ?>
-										<button class="btn btn-primary" type="button" disabled>
-											<span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-											9 Terjual
-										</button></p>
+									<p class="card-text spinner-grow spinner-grow-sm"><?php echo $p->namajp; ?> 9 Terjual
+									</p>
 
 									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
 									<button type="button" class="btn btn-outline-warning">DEMO</button>
