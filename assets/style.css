@@ -1,0 +1,2155 @@
+/** Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) **/
+@media (min-width: 350px) {
+    /*START NAVBAR**/
+.navbar{
+    background-color: #FAD000;
+    font-size: 13px;
+    border-bottom: 1px solid white;
+    z-index: 9999999;
+}
+
+.navbar img{
+    height: 40px;
+}
+
+.navhover a:hover{
+    border-bottom: 1px solid white;
+}
+
+ /*END NAVBAR**/
+
+
+
+
+
+
+
+
+
+
+
+
+ /**START SLIDER LANDING PAGE**/
+.slider{
+    height: 400px;
+    background-color: #FAD000;
+   padding-top: 120px;
+    
+}
+
+.slider .top{
+    color: cornsilk;
+    font-size: 13px;
+}
+
+.slider .midle{
+    color: cornsilk;
+    font-size: 15px;
+}
+.slider .bottom{
+    color: cornsilk;
+    font-size: 13px;
+}
+.slider button{
+    color: #FAD000;
+    font-size: 13px;
+    font-weight: 800;
+}
+.slider img{
+    width: 0%;
+}
+
+/**END SLIDER LANDING PAGE**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START SLIDER PAGE PRODUCT**/
+.slider h1{
+    color: white;
+    margin-top: 1px;
+    font-size: 20px;
+}
+
+.slider .detail p{
+    color: white;
+    margin-top: 10px;
+    font-size: 13px;
+    
+}
+
+.slider .detail h4{
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.slider .detail img{
+    max-height: 30px;
+    margin-top: -10px;
+}
+/***END SLIDER PAGE PRODUCT**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**START DEMO PAGE PRODUCT*/
+
+.demo{
+    margin-top: -100px;
+    text-align: center;
+    margin-left: 1px;
+    margin-bottom: 10px;
+   
+}
+.hape button{
+    color: white;
+    font-weight: 900;
+    min-width: 290px;
+    margin-top: -10px;
+    
+}
+.demo .detailvideo{
+    padding: 10px 10px;
+    margin-top: 30px;
+    height: 250px;
+    width: 100px;
+    background-color: white;
+    border-radius: 0%;
+    display: none;
+    
+}
+
+.demo .detailvideo h2{
+    text-align: left;
+    font-size: 20px;
+   
+}
+
+.detailvideo button{
+    color: white;
+    font-weight: 900;
+    width: 287px;
+    margin-left: -10px;
+    margin-bottom: -234px;
+    
+    
+}
+
+/**END DEMO PRODUCT PAGE*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*START TENTANG PAGE PRODUCT**/
+.tentang {
+  max-height: 800px;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.tentang h1{
+  font-size: 20px;
+}
+.tentang h2{
+  font-size: 20px;
+}
+
+.tentang p{
+  font-size: 13px;
+  text-align: left;
+}
+
+.tentang .kalimat{
+  min-width:250px;
+}
+
+.tentang .tools{
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: left;
+  
+}
+.tentang .tools .item{
+  margin-bottom: 50px;
+  
+}
+.tentang .tools img{
+  height: 50px;
+  width: 50px;
+}
+.tentang .keterangan{
+  margin: -50px 60px;
+}
+
+/*END TENTANG PAGE PRODUCT**/
+
+
+
+
+
+
+
+
+/*START CHECKOUT PAGE**/
+.checkout{
+    margin-top: -150px;
+    text-align: center;
+}
+/*END CHECKOUT PAGE**/
+/*START DETAIL CHECKOUT PAGE**/
+.detailproduct{
+   background-color: white;
+    height: 400px;
+    width: 300px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+.detailproduct img{
+    max-width: 150px;
+}
+
+.detailproduct h2{
+    font-size: 13px;
+}
+
+.subdetail{
+    margin: 10px -10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.subdetail2{
+    margin-top: 10px;
+}
+
+.subdetail2 input{
+    max-width: 300px;
+}
+/*END DETAIL CHECKOUT PAGE**/
+
+
+
+
+
+
+/*START PEMBAYARAN CHECKOUT PAGE**/
+.pembayaran{
+    background-color: white;
+    width: 300px;
+    height: 490px;    
+   
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pembayaran h1{
+    font-size: 17px;
+}
+
+.pembayaran button{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*END PEMBAYARAN CHECKOUT PAGE**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START LIHAT PRODUCT LANDING PAGE***/
+.lihat{
+    background-color: #FAD000;
+    height: 130px;
+    margin-top: -80px;
+    padding-top: 1px;
+    border-top: 1px solid white;
+}
+.lihat .top{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.lihat .top span{
+    color: black;
+    font-size: 15px;
+}
+.lihat .bottom{
+    font-size: 10px;
+}
+
+.lihat button{
+    color: #FAD000;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+/***END LIHAT PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START PRODUCT LANDING PAGE***/
+.product{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.product .badge{
+    margin-left: 8px;
+}
+.badge{
+    font-size: 10px;
+}
+.items{
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.items h5{
+    font-size: 13px;
+}
+
+.items p{
+    margin-top: -5px;
+    font-size: 9px;
+}
+
+.items a{
+    font-size: 13px;
+}
+
+.items button{
+    font-size: 13px;
+}
+/***END PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START CARA PESAN LANDING PAGE***/
+
+.carapesan{
+    margin-top: 80px;
+    padding-top: 30px;
+    height: 400px;
+    background-color: #F3F3F3;
+}
+/***END CARA PESAN LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START TESTIMONIAL LANDING PAGE***/
+.testimonial{
+    margin-top: 80px;
+    padding-top: 30px;
+    height: 400px;
+   
+}
+
+
+/***END TESTIMONIAL LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START CONTACT LANDING PAGE***/
+.contact{
+    margin-top: 80px;
+    padding-top: 20px;
+    height: 500px;
+    background-color: #F3F3F3;
+    text-align: center;
+}
+.contact .contactitem{
+  
+    width: 200px;
+    max-height: 190px;
+    margin-bottom: 5px;
+}
+
+.contact h1{
+font-size: 20px;
+}
+.contact h2{
+font-size: 15px;
+}
+
+.contact img{
+    height: 20%;
+    margin: 5px 5px;
+}
+.contact p{
+    font-size: 13px;
+}
+/***END CONTACT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+/***START FOOTER ***/
+
+footer{
+    background-color: #1e272e;
+    padding-top: 8px;
+    margin-top: 230px;
+    
+}
+
+footer p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+/***END FOOTER ***/
+
+ }
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+    /**START NAVBAR**/
+  .navbar{
+    background-color: #FAD000;
+    font-size: 13px;
+    border-bottom: 1px solid white;
+    z-index: 9999999;
+}
+
+.navbar img{
+    height: 40px;
+}
+
+.navhover a:hover{
+    border-bottom: 1px solid white;
+}
+/**END NAVBAR**/
+
+
+
+
+
+
+
+
+
+
+
+/**START SLIDER LANDING PAGE**/
+.slider{
+    height: 400px;
+    background-color: #FAD000;
+   padding-top: 120px;
+    
+}
+
+.slider .top{
+    color: cornsilk;
+    font-size: 13px;
+}
+
+.slider .midle{
+    color: cornsilk;
+    font-size: 15px;
+}
+.slider .bottom{
+    color: cornsilk;
+    font-size: 13px;
+}
+.slider button{
+    color: #FAD000;
+    font-size: 13px;
+    font-weight: 800;
+}
+.slider img{
+    width: 0%;
+}
+/**END SLIDER LANDING PAGE**/
+
+
+
+
+
+
+
+
+
+
+/**START SLIDER  PAGE PRODUCT**/
+.slider h1{
+    color: white;
+    margin-top: 1px;
+    font-size: 20px;
+}
+
+.slider .detail p{
+    color: white;
+    margin-top: 10px;
+    font-size: 13px;
+    
+}
+
+.slider .detail h4{
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.slider .detail img{
+    max-height: 30px;
+    margin-top: -10px;
+}
+
+
+/**END SLIDER  PAGE PRODUCT**/
+
+
+
+
+
+
+
+
+
+
+
+/**START DEMO PAGE PRODUCT*/
+
+.demo{
+    margin-top: -100px;
+    text-align: center;
+    margin-left: 1px;
+    margin-bottom: 10px;
+   
+}
+.hape button{
+    color: white;
+    font-weight: 900;
+    min-width: 290px;
+    margin-top: -10px;
+    
+}
+.demo .detailvideo{
+    padding: 10px 10px;
+    margin-top: 30px;
+    height: 250px;
+    width: 100px;
+    background-color: white;
+    border-radius: 0%;
+    display: none;
+    
+}
+
+.demo .detailvideo h2{
+    text-align: left;
+    font-size: 20px;
+   
+}
+
+.detailvideo button{
+    color: white;
+    font-weight: 900;
+    width: 287px;
+    margin-left: -10px;
+    margin-bottom: -234px;
+    
+    
+}
+
+/**END DEMO PAGE PRODUCT*/
+
+
+
+
+
+
+
+
+
+
+
+/**START TENTANG PAGE PRODUCT*/
+.tentang {
+  max-height: 600px;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.tentang h1{
+  font-size: 20px;
+}
+.tentang h2{
+  font-size: 20px;
+}
+
+.tentang p{
+  font-size: 13px;
+  text-align: left;
+}
+
+.tentang .kalimat{
+  min-width:310px;
+}
+
+.tentang .tools{
+  text-align: left;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+.tentang .tools .item{
+  margin-bottom: 50px;
+  
+}
+.tentang .tools img{
+  height: 50px;
+  width: 50px;
+}
+.tentang .keterangan{
+  margin: -50px 60px;
+}
+
+/**END TENTANG PAGE PRODUCT*/
+
+
+
+
+
+
+
+/*START CHECKOUT PAGE**/
+.checkout{
+    margin-top: -180px;
+}
+/*END CHECKOUT PAGE**/
+/*START DETAIL CHECKOUT PAGE**/
+.detailproduct{
+   background-color: white;
+    height: 400px;
+    width: 90%;
+    padding: 20px 20px;
+    text-align: left;
+}
+.detailproduct img{
+    max-width: 200px;
+}
+
+.detailproduct h2{
+    font-size: 13px;
+}
+
+.subdetail{
+    margin: 10px -10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.subdetail2{
+    margin-top: 10px;
+}
+
+.subdetail2 input{
+    max-width: 300px;
+}
+/*END DETAIL CHECKOUT PAGE**/
+
+
+
+
+
+
+/*START PEMBAYARAN CHECKOUT PAGE**/
+.pembayaran{
+    background-color: white;
+    width: 90%;
+    height: 490px;    
+    margin-left: 0;
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+.pembayaran h1{
+    font-size: 17px;
+}
+
+.pembayaran button{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*END PEMBAYARAN CHECKOUT PAGE**/
+
+
+
+
+
+
+
+
+
+
+/***START LIHAT PRODUCT LANDING PAGE***/
+.lihat{
+    background-color: #FAD000;
+    height: 130px;
+    margin-top: -80px;
+    padding-top: 1px;
+    border-top: 1px solid white;
+}
+.lihat .top{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.lihat .top span{
+    color: black;
+    font-size: 15px;
+}
+.lihat .bottom{
+    font-size: 10px;
+}
+
+.lihat button{
+    color: #FAD000;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+/***END LIHAT PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+/***START PRODUCT LANDING PAGE***/
+.product{
+    margin-top: 30px;
+    text-align: center;
+    
+}
+.product .badge{
+    margin-left: 8px;
+}
+.badge{
+    font-size: 10px;
+}
+.items{
+    width: 280px;
+    margin-bottom: 10px;
+}
+
+.items h5{
+    font-size: 13px;
+}
+
+.items p{
+    margin-top: -5px;
+    font-size: 9px;
+}
+
+.items a{
+    font-size: 13px;
+}
+
+.items button{
+    font-size: 13px;
+}
+/***END PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+/***START CARA PESAN LANDING PAGE***/
+.carapesan{
+    margin-top: 80px;
+    padding-top: 30px;
+    height: 400px;
+    background-color: #F3F3F3;
+}
+
+/***END CARA PESAN LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+/***START TESTIMONIAL LANDING PAGE***/
+.testimonial{
+    margin-top: 80px;
+    padding-top: 30px;
+    height: 400px;
+   
+}
+/***END TESTIMONIAL LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***START CONTACT LANDING PAGE***/
+.contact{
+    margin-top: 80px;
+    padding-top: 20px;
+    height: 500px;
+    background-color: #F3F3F3;
+    text-align: center;
+}
+.contact .contactitem{
+  
+    width: 200px;
+    max-height: 190px;
+    margin-bottom: 5px;
+}
+
+.contact h1{
+font-size: 20px;
+}
+.contact h2{
+font-size: 15px;
+}
+
+.contact img{
+    height: 20%;
+    margin: 5px 5px;
+}
+.contact p{
+    font-size: 13px;
+}
+
+/***END CONTACT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+/**START FOOTER***/
+footer{
+    background-color: #1e272e;
+    padding-top: 8px;
+}
+
+footer p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+/**END FOOTER***/
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Medium devices (tablets, 768px and up)**/
+@media (min-width: 768px) {
+
+    /***START NAVBAR***/
+    .navbar{
+        background-color: #FAD000;
+        font-size: 15px;
+        border-bottom: 1px solid white;
+    }
+    
+    .navbar img{
+        height: 40px;
+    }
+    
+    .navhover a:hover{
+        border-bottom: 1px solid white;
+    }
+
+    /***END NAVBAR***/
+
+
+
+
+
+
+
+
+
+
+    /***START SLIDER LANDING PAGE***/
+    
+    .slider{
+        height: 350px;
+        background-color: #FAD000;
+       padding-top: 120px;
+        
+    }
+    
+    .slider .top{
+        color: cornsilk;
+        font-size: 18px;
+    }
+    
+    .slider .midle{
+        color: cornsilk;
+        font-size: 25px;
+    }
+    .slider .bottom{
+        color: cornsilk;
+        font-size: 30px;
+    }
+    .slider button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    /***END  SLIDER LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+   /***START SLIDER PAGE PRODUCT***/
+    .slider h1{
+        color: white;
+        margin-top: 1px;
+        font-size: 23px;
+    }
+    
+    .slider .detail p{
+        color: white;
+        margin-top: 10px;
+        font-size: 15px;
+        
+    }
+    
+    .slider .detail h4{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    
+    .slider .detail img{
+        max-height: 30px;
+        margin-top: -10px;
+    }
+
+    /***ENDSLIDER PAGE PRODUCT***/
+
+
+
+
+
+
+
+
+
+
+
+
+    /***START DEMO PAGE PRODUCT***/
+    
+    .demo{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 1px;
+        margin-bottom: 10px;
+       
+    }
+    .hape button{
+        color: white;
+        font-weight: 900;
+        width: 300px;
+        margin-top: 10px;
+        
+        
+    }
+   
+    
+    
+    /***END DEMO PAGE PRODUCT***/
+    
+
+
+
+
+
+
+
+
+
+
+
+    /***START TENTANG PAGE PRODUCT***/
+    .tentang {
+      max-height: 550px;
+      text-align: justify;
+      padding-top: 1px;
+    }
+    
+    .tentang h1{
+      font-size: 20px;
+    }
+    .tentang h2{
+      font-size: 20px;
+    }
+    
+    .tentang p{
+      font-size: 13px;
+      text-align: left;
+    }
+    
+    .tentang .kalimat{
+      min-width: 450px;
+    }
+    
+    .tentang .tools{
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 1px;
+      text-align: left;
+    }
+    .tentang .tools .item{
+      margin-bottom: 50px;
+      
+    }
+    .tentang .tools img{
+      height: 50px;
+      width: 50px;
+    }
+    .tentang .keterangan{
+      margin: -50px 60px;
+    }
+    
+  /***END TENTANG PAGE PRODUCT***/
+    
+    
+
+
+
+
+  
+
+/*START CHECKOUT PAGE**/
+.checkout{
+    margin-top: -140px;
+}
+/*END CHECKOUT PAGE**/
+/*START DETAIL CHECKOUT PAGE**/
+.detailproduct{
+   background-color: white;
+    height: 350px;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: left;
+}
+.detailproduct img{
+    max-width: 200px;
+}
+
+.detailproduct h2{
+    font-size: 17px;
+}
+
+.subdetail{
+    margin: -130px 200px;
+    width: 500px;
+    margin-bottom: 90px;
+}
+
+.subdetail2{
+    margin-top: 10px;
+}
+
+.subdetail2 input{
+    max-width: 300px;
+}
+/*END DETAIL CHECKOUT PAGE**/
+
+
+
+
+
+
+/*START PEMBAYARAN CHECKOUT PAGE**/
+.pembayaran{
+    background-color: white;
+    width: 100%;
+    height: 500px;    
+    margin-left: 0;
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pembayaran h1{
+    font-size: 17px;
+}
+
+.pembayaran button{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 60px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*END PEMBAYARAN CHECKOUT PAGE**/
+
+
+
+
+
+
+  /***START LIHAT LANDING PAGE***/
+    .lihat{
+        background-color: #FAD000;
+        height: 130px;
+        margin-top: -80px;
+        padding-top: 30px;
+        border-top: 1px solid white;
+    }
+    .lihat .top{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .lihat .top span{
+        color: black;
+        font-size: 25px;
+    }
+    .lihat .bottom{
+        font-size: 15px;
+    }
+    
+    .lihat button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+    
+    /***END LIHAT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+    /***START PRODUCT LANDING PAGE***/
+    .product{
+        margin-top: 123px;
+        
+    }
+    .product .badge{
+        margin-left: 10px;
+    }
+    
+    /***END PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+    /***START CARA PESAN LANDING PAGE***/
+    .carapesan{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+    /***END CARA PESAN LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+    /***START TESTIMONIAL LANDING PAGE***/
+    .testimonial{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+       
+    }
+    /***END TESTIMONIAL LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+    /***START CONTACT LANDING PAGE***/
+    .contact{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+
+
+    /***END CONTACT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+
+
+    /**START FOOTER***/
+    footer{
+        background-color: #1e272e;
+        padding-top: 8px;
+    }
+
+    footer p{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    footer a{
+        color: white;
+    }
+
+    /**END FOOTER***/
+    }
+
+
+
+/** Large devices (desktops, 992px and up) **/
+@media (min-width: 992px) { 
+
+    /***START NAVBAR***/
+    .navbar{
+        background-color: #FAD000;
+        font-size: 15px;
+        border-bottom: 1px solid white;
+    }
+    
+    .navbar img{
+        height: 40px;
+    }
+    
+    .navhover a:hover{
+        border-bottom: 1px solid white;
+    }
+
+    /***END NAVBAR***/
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /***START SLIDER LANDING PAGE***/
+    
+    .slider{
+        height: 350px;
+        background-color: #FAD000;
+       padding-top: 120px;
+        
+    }
+    
+    .slider .top{
+        color: cornsilk;
+        font-size: 18px;
+    }
+    
+    .slider .midle{
+        color: cornsilk;
+        font-size: 25px;
+    }
+    .slider .bottom{
+        color: cornsilk;
+        font-size: 30px;
+    }
+    .slider button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    /***END SLIDER LANDING PAGE***/
+    
+
+
+
+
+
+
+
+
+
+    /***START SLIDER PAGE PRODUCT***/
+    .slider h1{
+        color: white;
+        margin-top: 1px;
+        font-size: 23px;
+    }
+    
+    .slider .detail p{
+        color: white;
+        margin-top: 10px;
+        font-size: 15px;
+        
+    }
+    
+    .slider .detail h4{
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    
+    .slider .detail img{
+        max-height: 30px;
+        margin-top: -10px;
+    }
+
+    /***END SLIDER PAGE PRODUCT***/
+
+
+
+
+
+
+
+
+
+
+    /***START DEMO PAGE PRODUCT***/
+    
+    .demo{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 1px;
+        margin-bottom: 50px;
+       
+    }
+    .hape button{
+        color: white;
+        font-weight: 900;
+        width: 300px;
+        margin-top: 10px;
+        
+        
+    }
+   
+    
+    
+    /***END DEMO PAGE PRODUCT***/
+    
+    
+
+
+
+
+
+
+
+
+
+
+     /***START TENTANG PAGE PRODUCT***/
+    .tentang {
+      max-height: 400px;
+      text-align: justify;
+      padding-top: 1px;
+    }
+    
+    .tentang h1{
+      font-size: 20px;
+    }
+    .tentang h2{
+      font-size: 20px;
+    }
+    
+    .tentang p{
+      font-size: 13px;
+      text-align: left;
+    }
+    
+    .tentang .kalimat{
+      min-width: 700px;
+    }
+    
+    .tentang .tools{
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 1px;
+      text-align: left;
+     
+      
+    }
+    .tentang .tools .item{
+      margin-bottom: 50px;
+     
+      
+    }
+    .tentang .tools img{
+      height: 50px;
+      width: 50px;
+    }
+    .tentang .keterangan{
+      margin: -50px 60px;
+    }
+   /***END TENTANG PAGE PRODUCT***/
+    
+
+
+
+
+
+   
+
+/*START CHECKOUT PAGE**/
+.checkout{
+    margin-top: -140px;
+}
+/*END CHECKOUT PAGE**/
+/*START DETAIL CHECKOUT PAGE**/
+.detailproduct{
+   background-color: white;
+    height: 350px;
+    width: 30%;
+    padding: 20px 20px;
+}
+.detailproduct img{
+    max-width: 200px;
+}
+
+.detailproduct h2{
+    font-size: 17px;
+}
+
+.subdetail{
+    margin: -130px 200px;
+    width: 500px;
+    margin-bottom: 90px;
+}
+
+.subdetail2{
+    margin-top: 10px;
+}
+
+.subdetail2 input{
+    max-width: 300px;
+}
+/*END DETAIL CHECKOUT PAGE**/
+
+
+
+
+
+
+/*START PEMBAYARAN CHECKOUT PAGE**/
+.pembayaran{
+    background-color: white;
+    width: 100px;
+    height: 490px;    
+    margin-left: 10px;
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pembayaran h1{
+    font-size: 17px;
+}
+
+.pembayaran button{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*END PEMBAYARAN CHECKOUT PAGE**/
+
+
+
+
+
+
+
+    /***START LIHAT LANDING PAGE***/
+    .lihat{
+        background-color: #FAD000;
+        height: 130px;
+        margin-top: -80px;
+        padding-top: 30px;
+        border-top: 1px solid white;
+    }
+    .lihat .top{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .lihat .top span{
+        color: black;
+        font-size: 25px;
+    }
+    .lihat .bottom{
+        font-size: 15px;
+    }
+    
+    .lihat button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    /***ENDLIHAT LANDING PAGE***/
+    
+
+
+
+
+
+
+
+    /***START PRODUCT LANDING PAGE***/
+    .product{
+        margin-top: 123px;
+        
+    }
+    .product .badge{
+        margin-left: 10px;
+    }
+
+    /***END PRODUCT LANDING PAGE***/
+
+
+
+
+
+
+
+
+
+    /***START CARA PESAN LANDING PAGE***/
+    .carapesan{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+
+    /***END CARA PESAN LANDING PAGE***/
+    
+
+
+
+
+
+
+    /***START TESTIMONIAL LANDING PAGE***/
+    .testimonial{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+       
+    }
+
+    /***END TESTIMONIAL LANDING PAGE***/
+    
+
+
+
+
+
+
+    /***START CONTACT LANDING PAGE***/
+    .contact{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+
+    /***END CONTACT LANDING PAGE***/
+
+
+
+
+
+
+
+
+    /**START FOOTER***/
+    footer{
+        background-color: #1e272e;
+        padding-top: 8px;
+    }
+
+    footer p{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    footer a{
+        color: white;
+    }
+
+    /**END FOOTER***/
+
+ }
+
+
+
+
+
+
+/** Extra large devices (large desktops, 1200px and up) **/
+@media (min-width: 1200px) { 
+    /***START NAVBAR***/
+    .navbar{
+        background-color: #FAD000;
+        font-size: 15px;
+        border-bottom: 1px solid white;
+    }
+    
+    .navbar img{
+        height: 40px;
+    }
+    
+    .navhover a:hover{
+        border-bottom: 1px solid white;
+    }
+    /***END NAVBAR***/
+    
+
+
+
+
+
+
+    /***START SLIDER LANDING PAGE***/
+    .slider{
+        height: 350px;
+        background-color: #FAD000;
+       padding-top: 120px;
+        
+    }
+    
+    .slider .top{
+        color: cornsilk;
+        font-size: 18px;
+    }
+    
+    .slider .midle{
+        color: cornsilk;
+        font-size: 25px;
+    }
+    .slider .bottom{
+        color: cornsilk;
+        font-size: 30px;
+    }
+    .slider button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    /***END SLIDER LANDING PAGE***/
+    
+
+
+
+
+
+
+    /***START SLIDER PAGE PRODUCT***/
+    .slider h1{
+        color: white;
+        margin-top: 1px;
+        font-size: 26px;
+    }
+    
+    .slider .detail p{
+        color: white;
+        margin-top: 20px;
+        font-size: 18px;
+        
+    }
+    
+    .slider .detail h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    
+    .slider .detail img{
+        max-height: 30px;
+        margin-top: 10px;
+    }
+    /***END SLIDER PAGE PRODUCT***/
+
+
+
+
+
+
+
+
+    /***START DEMO PAGE PRODUCT***/
+    
+    .demo{
+        margin-top: -100px;
+        text-align: center;
+        margin-left: 1px;
+        margin-bottom: 60px;
+       
+    }
+    .hape button{
+        color: white;
+        font-weight: 900;
+        width: 300px;
+        margin-top: 10px;
+        
+        
+    }
+   
+    
+    /***END DEMO PAGE PRODUCT***/
+
+
+
+
+
+
+
+
+    /***START TENTANG PAGE PRODUCT***/
+    .tentang {
+      max-height: 500px;
+      text-align: justify;
+      padding-top: 1px;
+    }
+    
+    .tentang h1{
+      font-size: 25px;
+    }
+    .tentang h2{
+      font-size: 25px;
+    }
+    
+    .tentang p{
+      font-size: 15px;
+      text-align: left;
+    }
+    
+    .tentang .kalimat{
+      min-width: 800px;
+    }
+    .tentang .kalimat p{
+        font-size: 18px;
+    }
+    
+    .tentang .tools{
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 1px;
+      text-align: left;
+     
+      
+    }
+    .tentang .tools .item{
+      margin-bottom: 50px;
+     
+      
+    }
+    .tentang .tools img{
+      height: 50px;
+      width: 50px;
+    }
+    .tentang .keterangan{
+      margin: -50px 60px;
+    }
+    
+    /***END TENTANG PAGE PRODUCT***/
+    
+    
+
+
+
+
+
+    
+
+/*START CHECKOUT PAGE**/
+.checkout{
+    margin-top: -100px;
+    
+    
+}
+/*END CHECKOUT PAGE**/
+/*START DETAIL CHECKOUT PAGE**/
+.detailproduct{
+   background-color: white;
+    height: 350px;
+    width: 700px;
+    padding: 20px 20px;
+    text-align: left;
+}
+.detailproduct img{
+    max-width: 200px;
+}
+
+.detailproduct h2{
+    font-size: 17px;
+}
+
+.subdetail{
+    margin: -130px 200px;
+    width: 500px;
+    margin-bottom: 90px;
+}
+
+.subdetail2{
+    margin-top: 10px;
+}
+
+.subdetail2 input{
+    max-width: 300px;
+}
+/*END DETAIL CHECKOUT PAGE**/
+
+
+
+
+
+
+/*START PEMBAYARAN CHECKOUT PAGE**/
+.pembayaran{
+    background-color: white;
+    width: 100px;
+    height: 490px;    
+    margin-left: 50px;
+    padding: 15px 15px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.pembayaran h1{
+    font-size: 17px;
+}
+
+.pembayaran button{
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 50px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/*END PEMBAYARAN CHECKOUT PAGE**/
+
+
+
+
+
+    /***START LIHAT LANDING PAGE***/
+    .lihat{
+        background-color: #FAD000;
+        height: 130px;
+        margin-top: -80px;
+        padding-top: 30px;
+        border-top: 1px solid white;
+    }
+    .lihat .top{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .lihat .top span{
+        color: black;
+        font-size: 25px;
+    }
+    .lihat .bottom{
+        font-size: 15px;
+    }
+    
+    .lihat button{
+        color: #FAD000;
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    /***END LIHAT LANDING PAGE***/
+    
+
+
+
+
+
+    /***START PRODUCT LANDING PAGE***/
+    .product{
+        margin-top: 123px;
+        
+    }
+    .product .badge{
+        margin-left: 10px;
+    }
+
+    /***END PRODUCT LANDING PAGE***/
+    
+
+
+
+
+    /***START CARA PESAN LANDING PAGE***/
+    .carapesan{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+
+    /***END CARA PESAN LANDING PAGE***/
+    
+
+
+
+
+    /***START TESTIMONIAL LANDING PAGE***/
+    .testimonial{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+       
+    }
+
+
+    /***END TESTIMONIAL LANDING PAGE***/
+    
+
+
+
+
+    /***START CONTACT LANDING PAGE***/
+    .contact{
+        margin-top: 80px;
+        padding-top: 30px;
+        height: 400px;
+        background-color: #F3F3F3;
+    }
+
+    /***END CONTACT LANDING PAGE***/
+
+
+
+
+
+    /**START FOOTER***/
+    footer{
+        background-color: #1e272e;
+        padding-top: 8px;
+    }
+
+    footer p{
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    footer a{
+        color: white;
+    }
+
+    /**END FOOTER***/
+
+ }
