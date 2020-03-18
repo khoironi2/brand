@@ -141,8 +141,8 @@ class Welcome extends CI_Controller
 
 
 		$config['protocol']    = 'smtp';
-		$config['smtp_host']    = 'auth.khoironi.net';
-		$config['smtp_port']    = '465';
+		$config['smtp_host']    = 'mail.auth.khoironi.net';
+		$config['smtp_port']    = '587';
 		$config['smtp_timeout'] = '60';
 
 		$config['smtp_user']    = 'admin@auth.khoironi.net';    //Important
