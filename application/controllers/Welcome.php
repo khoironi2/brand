@@ -80,6 +80,9 @@ class Welcome extends CI_Controller
 
 
 			$email = $this->input->post('email');
+
+
+
 			$namalengkap    = $this->input->post('nama_lengkap');
 			$nama_p    = $this->input->post('nama_p');
 			$harga_p    = $this->input->post('harga_p');
@@ -109,10 +112,12 @@ class Welcome extends CI_Controller
 
 	public function send($email,  $namalengkap, $harga_p, $nama_p)
 	{
+		$admin1 = 'masrony37@gmail.com';
+		$admin2 = 'mr.rojer46@gmail.com';
 		// $to =  $this->input->post('from');  // User email pass here
 		$subject = 'PT TECHTOUP';
 
-		$from = 'admin@auth.khoironi.net';              // Pass here your mail id
+		$from = 'muhammadronias@gmail.com';              // Pass here your mail id
 
 		$emailContent = '<!DOCTYPE><html><head></head><body><table width="600px" style="border:1px solid #cccccc;margin: auto;border-spacing:0;"><tr><td style="background:#fad000;padding-left:3%"><img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 /></td></tr>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
@@ -121,6 +126,8 @@ class Welcome extends CI_Controller
 		$emailContent .= 'Halo Kak ' . $namalengkap;  //   Post message available here
 		$emailContent .= '<hr>';  //   Post message available here
 		$emailContent .= 'Terimakasih sudah melakukan pembelian' . $nama_p;  //   Post message available here
+		$emailContent .= '<hr>';  //   Post message available here
+		$emailContent .= 'Email Customer' . $email;  //   Post message available here
 		$emailContent .= '<hr>';  //   Post message available here
 		$emailContent .= 'Total Harga' . $harga_p;  //   Post message available here
 		$emailContent .= '<hr>';  //   Post message available here
@@ -141,11 +148,11 @@ class Welcome extends CI_Controller
 
 
 		$config['protocol']    = 'smtp';
-		$config['smtp_host']    = 'mail.auth.khoironi.net';
-		$config['smtp_port']    = '587';
+		$config['smtp_host']    = 'smtp.gmail.com';
+		$config['smtp_port']    = '465';
 		$config['smtp_timeout'] = '60';
 
-		$config['smtp_user']    = 'admin@auth.khoironi.net';    //Important
+		$config['smtp_user']    = 'muhammadronias@gmail.com';    //Important
 		$config['smtp_pass']    = 'N*+^[KRP-C5X';  //Important
 
 		$config['charset']    = 'utf-8';
@@ -158,7 +165,7 @@ class Welcome extends CI_Controller
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
 		$this->email->from($from);
-		$this->email->to($email);
+		$this->email->to($admin1, $admin2);
 		$this->email->subject($subject);
 		$this->email->message($emailContent);
 		$this->email->send();
