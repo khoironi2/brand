@@ -86,7 +86,7 @@ class Welcome extends CI_Controller
 			$namalengkap    = $this->input->post('nama_lengkap');
 			$nama_p    = $this->input->post('nama_p');
 			$harga_p    = $this->input->post('harga_p');
-$list = array('mr.rojer46@gmail.com','masrony37@gmail.com')
+			$list = array('mr.rojer46@gmail.com', 'masrony37@gmail.com');
 			$datamember = array(
 				'harga_p' 		=> $this->input->post('harga_p'),
 				'support' 	=> $this->input->post('support'),
@@ -101,12 +101,12 @@ $list = array('mr.rojer46@gmail.com','masrony37@gmail.com')
 			);
 
 			$this->M_product->insert($datamember);
-			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p,$list);
+			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p, $list);
 			echo "Mantappp";
 		}
 		redirect();
 	}
-	public function sendMail($email, $namalengkap,$list)
+	public function sendMail($email, $namalengkap, $list)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
 		$admin = 'mr.rojer46@gmail.com';
@@ -148,8 +148,6 @@ $list = array('mr.rojer46@gmail.com','masrony37@gmail.com')
 			$this->email->subject('Here is your info ');
 			$this->email->message('Hi ' . $emailContent . ' Here is the info you requested.');
 			$this->email->send();
-
-			
 		}
 
 		// $this->email->initialize($config);
