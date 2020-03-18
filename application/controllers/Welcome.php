@@ -112,8 +112,7 @@ class Welcome extends CI_Controller
 
 	public function send($email,  $namalengkap, $harga_p, $nama_p)
 	{
-		$admin1 = 'masrony37@gmail.com';
-		$admin2 = 'mr.rojer46@gmail.com';
+
 		// $to =  $this->input->post('from');  // User email pass here
 		$subject = 'PT TECHTOUP';
 
@@ -148,7 +147,7 @@ class Welcome extends CI_Controller
 
 
 		$config['protocol']    = 'smtp';
-		$config['smtp_host']    = 'smtp.gmail.com';
+		$config['smtp_host']    = 'ssl://smtp.gmail.com';
 		$config['smtp_port']    = '465';
 		$config['smtp_timeout'] = '60';
 
