@@ -12,6 +12,7 @@ class M_product extends CI_Model
         $this->db->select('*');
         $this->db->from('product');
         $this->db->join('jenis_product', 'jenis_product.idjp = product.idjp');
+        $this->db->order_by('id','ASC')
         $result = $this->db->get();
         return $result->result();
     }
