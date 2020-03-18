@@ -124,7 +124,7 @@ class Welcome extends CI_Controller
 
 
 		$emailContent .= 'Customer Email: ' . $email;
-		$emailContent .= 'Konfirmasi pembayaran ke WhatsApp LINK <a href="https://api.whatsapp.com/send?phone=' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">KONFIRMASI</a>';
+		$emailContent .= 'Konfirmasi pembayaran ke WhatsApp LINK <a href="https://api.whatsapp.com/send?phone=62' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">KONFIRMASI</a>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#000000;color: #999999;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://codingmantra.co.in/' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.codingmantra.co.in</a></p></td></tr></table></body></html>";
 
