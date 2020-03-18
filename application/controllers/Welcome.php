@@ -102,7 +102,7 @@ class Welcome extends CI_Controller
 			);
 
 			$this->M_product->insert($datamember);
-			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p, $telpon);
+			$this->sendMail($email,  $namalengkap, $telpon);
 			echo "Mantappp";
 		}
 		redirect();
