@@ -114,8 +114,11 @@
 										<a style="color: aliceblue" class="badge badge-success"> 9 Terjual</a>
 									</p>
 
-									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
-									<button type="button" class="btn btn-outline-warning">DEMO</button>
+									<a href="<?php echo base_url('welcome/checkout/') . $p->idp ?>" class="btn btn-primary">DOWNLOAD</a>
+									<a href="<?php echo base_url('welcome/product/') . $p->idp ?>">
+										<button type="button" class="btn btn-outline-warning">DEMO</button>
+									</a>
+
 
 								</div>
 							</div>
