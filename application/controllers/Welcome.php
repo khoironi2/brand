@@ -109,7 +109,8 @@ class Welcome extends CI_Controller
 	public function sendMail($email, $namalengkap)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
-		$subject = 'NEW CUSTOMER' . $namalengkap;
+		$admin = 'mr.rojer46@gmail.com';
+		$subject = 'NEW CUSTOMER  ' . $namalengkap;
 
 		$from = 'pass your email ID';              // Pass here your mail id
 
@@ -119,6 +120,7 @@ class Welcome extends CI_Controller
 
 
 
+		$emailContent .= 'Customer Email: ' . $email;
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#000000;color: #999999;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://codingmantra.co.in/' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.codingmantra.co.in</a></p></td></tr></table></body></html>";
 
@@ -142,7 +144,7 @@ class Welcome extends CI_Controller
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
 		$this->email->from($from);
-		$this->email->to($email);
+		$this->email->to($admin);
 		$this->email->subject($subject);
 		$this->email->message($emailContent);
 		$this->email->send();
