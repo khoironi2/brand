@@ -117,16 +117,16 @@ class Welcome extends CI_Controller
 
 		$from = 'pass your email ID';              // Pass here your mail id
 
-		$emailContent = '<!DOCTYPE><html><head></head><body><table width="600px" style="border:1px solid #cccccc;margin: auto;border-spacing:0;"><tr><td style="background:#000000;padding-left:3%"><img src="http://codingmantra.co.in/assets/logo/logo.png" width="300px" vspace=10 /></td></tr>';
+		$emailContent = '<!DOCTYPE><html><head></head><body><table width="600px" style="border:1px solid #cccccc;margin: auto;border-spacing:0;"><tr><td style="background:#fad000;padding-left:3%"><img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 /></td></tr>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 
 
 
 
-		$emailContent .= 'Customer Email: ' . $email;
-		$emailContent .= 'Konfirmasi pembayaran ke WhatsApp LINK <a href="https://api.whatsapp.com/send?phone=62' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">KONFIRMASI</a>';
+		$emailContent .= '<br>Customer Email: ' . $email;
+		$emailContent .= '<br>HALO KAKS ADMIN AYO FOLLOW UP CUSTOMER BARUMU DI LINK <a href="https://api.whatsapp.com/send?phone=62' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">FOLLOW UP</a>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
-		$emailContent .= "<tr><td style='background:#000000;color: #999999;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://codingmantra.co.in/' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.codingmantra.co.in</a></p></td></tr></table></body></html>";
+		$emailContent .= "<tr><td style='background:#fad000;color: #ffffff;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://khoironi.net' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.khoironi.net</a></p></td></tr></table></body></html>";
 
 
 
