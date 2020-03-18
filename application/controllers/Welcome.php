@@ -141,12 +141,12 @@ class Welcome extends CI_Controller
 
 
 		$config['protocol']    = 'smtp';
-		$config['smtp_host']    = 'mail.khoironi.net';
+		$config['smtp_host']    = 'ssl://smtp.gmail.com';
 		$config['smtp_port']    = '465';
 		$config['smtp_timeout'] = '60';
 
-		$config['smtp_user']    = 'admin@khoironi.net';    //Important
-		$config['smtp_pass']    = ',Z{OGut~6pJ^';  //Important
+		$config['smtp_user']    = 'muhammadronias@gmail.com';    //Important
+		$config['smtp_pass']    = 'hjm0hsol3h';  //Important
 
 		$config['charset']    = 'utf-8';
 		$config['newline']    = "\r\n";
