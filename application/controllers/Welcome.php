@@ -86,6 +86,7 @@ class Welcome extends CI_Controller
 			$namalengkap    = $this->input->post('nama_lengkap');
 			$nama_p    = $this->input->post('nama_p');
 			$harga_p    = $this->input->post('harga_p');
+			$telpon    = $this->input->post('telpon');
 
 			$datamember = array(
 				'harga_p' 		=> $this->input->post('harga_p'),
@@ -101,12 +102,12 @@ class Welcome extends CI_Controller
 			);
 
 			$this->M_product->insert($datamember);
-			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p);
+			$this->sendMail($email,  $namalengkap, $harga_p, $nama_p, $telpon);
 			echo "Mantappp";
 		}
 		redirect();
 	}
-	public function sendMail($email, $namalengkap)
+	public function sendMail($email, $namalengkap, $telpon)
 	{
 		// $to =  $this->input->post('from');  // User email pass here
 		$list = array('mr.rojer46@gmail.com', 'masrony37@gmail.com');
@@ -123,6 +124,7 @@ class Welcome extends CI_Controller
 
 
 		$emailContent .= 'Customer Email: ' . $email;
+		$emailContent .= 'Konfirmasi pembayaran ke WhatsApp LINK <a href="https://api.whatsapp.com/send?phone=' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">KONFIRMASI</a>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#000000;color: #999999;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://codingmantra.co.in/' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.codingmantra.co.in</a></p></td></tr></table></body></html>";
 
