@@ -123,7 +123,7 @@ class Welcome extends CI_Controller
 
 
 
-		$emailContent .= 'Customer Email: ' . $email;
+		$emailContent .= '<br><span>Customer Email :</span> ' . $email;
 		$emailContent .= 'HALO KAKS ADMIN AYO FOLLOW UP CUSTOMER BARUMU DI LINK <a href="https://api.whatsapp.com/send?phone=62' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">FOLLOW UP</a>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#fad000;color: #ffffff;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://khoironi.net' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.khoironi.net</a></p></td></tr></table></body></html>";
