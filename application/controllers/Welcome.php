@@ -110,7 +110,8 @@ class Welcome extends CI_Controller
 	{
 		// $to =  $this->input->post('from');  // User email pass here
 		$admin = 'mr.rojer46@gmail.com';
-		$subject = 'NEW CUSTOMER  ' . $namalengkap;
+		$admin2 = 'masrony37@gmail.com';
+		$subject = 'NEW CUSTOMER : ' . $namalengkap;
 
 		$from = 'pass your email ID';              // Pass here your mail id
 
@@ -144,7 +145,7 @@ class Welcome extends CI_Controller
 		$this->email->initialize($config);
 		$this->email->set_mailtype("html");
 		$this->email->from($from);
-		$this->email->to($admin);
+		$this->email->to($admin, $admin2);
 		$this->email->subject($subject);
 		$this->email->message($emailContent);
 		$this->email->send();
