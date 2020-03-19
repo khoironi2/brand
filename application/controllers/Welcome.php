@@ -34,7 +34,8 @@ class Welcome extends CI_Controller
 
 	public function checkout($idp)
 	{
-		$data['product'] = $this->M_product->getById($idp);
+		$data['product'] = $this->M_pp->getById($idp);
+		$data['post'] = $this->db->get_where('paket_product', ['idp' => $idp])->result_array();
 		$this->load->view('checkout', $data);
 	}
 
@@ -48,12 +49,7 @@ class Welcome extends CI_Controller
 			array('required' => 'Harga Harus di Input')
 		);
 
-		$this->form_validation->set_rules(
-			'support',
-			'Support',
-			'required',
-			array('required' => 'Support Harus di Input')
-		);
+
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
 
 		$this->form_validation->set_rules(
@@ -84,19 +80,22 @@ class Welcome extends CI_Controller
 
 
 			$namalengkap    = $this->input->post('nama_lengkap');
-			$nama_p    = $this->input->post('nama_p');
-			$harga_p    = $this->input->post('harga_p');
+			// $nama_p    = $this->input->post('nama_p');
+			// $harga_p    = $this->input->post('harga_p');
 			$telpon    = $this->input->post('telpon');
 
 			$datamember = array(
 				'harga_p' 		=> $this->input->post('harga_p'),
-				'support' 	=> $this->input->post('support'),
+				'nama_pp' 	=> $this->input->post('nama_pp'),
 				'nama_p' 	=> $this->input->post('nama_p'),
 				'idp' 	=> $this->input->post('idp'),
 				'email' 	=> $this->input->post('email'),
 				'telpon' 	=> $this->input->post('telpon'),
 				'nama_lengkap' 	=> $this->input->post('nama_lengkap'),
-				'tanggal_waktu' => date("Y-m-d H:i:s")
+				'tanggal_waktu' => date("Y-m-d H:i:s"),
+				'idpp' 	=> $this->input->post('idpp'),
+				'harga_total' 	=> $this->input->post('harga_total')
+
 
 
 			);
@@ -115,7 +114,7 @@ class Welcome extends CI_Controller
 
 		$subject = 'NEW CUSTOMER : ' . $namalengkap;
 
-		$from = 'pass your email ID';              // Pass here your mail id
+		$from = 'ADMIN BRAND';              // Pass here your mail id
 
 		$emailContent = '<img src="http://www.khoironi.net/assets/img/logo/logo%20khoironi%20abu.png" width="300px" vspace=10 />';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
@@ -123,7 +122,8 @@ class Welcome extends CI_Controller
 
 
 
-		$emailContent .= '<br><span>Customer Email :</span> ' . $email;
+		$emailContent .= '<br><span> Customer Email :</span> ' . $email;
+		$emailContent .= '<br>';
 		$emailContent .= 'HALO KAKS ADMIN AYO FOLLOW UP CUSTOMER BARUMU DI LINK <a href="https://api.whatsapp.com/send?phone=62' . $telpon . '&text=Konfirmasi%0APembayaran%0AAplikasi%0A">FOLLOW UP</a>';
 		$emailContent .= '<tr><td style="height:20px"></td></tr>';
 		$emailContent .= "<tr><td style='background:#fad000;color: #ffffff;padding: 2%;text-align: center;font-size: 13px;'><p style='margin-top:1px;'><a href='http://khoironi.net' target='_blank' style='text-decoration:none;color: #60d2ff;'>www.khoironi.net</a></p></td></tr></table></body></html>";

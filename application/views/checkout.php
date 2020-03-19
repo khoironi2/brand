@@ -68,121 +68,41 @@
         <div class="container">
             <div class="row justify-content-center">
                 <!-- START DETAIL -->
-                <div class="col-lg shadow-lg detailproduct rounded ">
-                    <img src="<?= $product->url_img; ?>" alt="Sistem Pakar Penyakit Ginjal Menggunakan Metode Forward Chaining">
-                    <div class="col subdetail">
-                        <h2><?= $product->nama_p; ?></h2>
-                        <span class="badge badge-pill badge-secondary"><?= $product->namajp; ?></span>
-                    </div>
+                <?php foreach ($post as $pos) : ?>
 
-                    <div class="col subdetail2">
-                        <hr>
-                        <p><i class="fas fa-user-shield"></i> Berikan Akses Product Kepada <span class="badge badge-danger" id="abc"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nomor Yang Bisa Dihubungi <span class="badge badge-danger" id="def"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nama Lengkap <span class="badge badge-danger" id="hij"></span> </p>
+                    <div class="col-lg shadow-lg detailproduct rounded ">
+                        <img src="<?= $product->url_img; ?>" alt="<?= $product->nama_p; ?>">
+                        <div class="col subdetail2">
+                            <h2><?= $product->nama_p; ?></h2>
+                            <span class="badge badge-pill badge-secondary"><?php echo $pos['nama_pp']; ?></span>
+                        </div>
 
-
-                    </div>
-
+                        <div class="col subdetail2">
+                            <hr>
+                            <p><i class="fas fa-user-shield"></i> Harga Paket <?php echo $pos['nama_pp']; ?> : <?php echo $pos['harga_pp']; ?> <span class="badge badge-danger" id="abc"></span> </p>
+                            <p><i class="fas fa-user-shield"></i> Revisi <?php echo $pos['max_revisi']; ?> Kali <span class="badge badge-danger" id="def"></span> </p>
+                            <p><i class="fas fa-user-shield"></i> Total <?php echo $pos['harga_total']; ?> <span class="badge badge-danger" id="hij"></span> </p>
 
 
-                </div>
-                <div class="col-lg shadow-lg detailproduct rounded ">
-                    <img src="<?= $product->url_img; ?>" alt="Sistem Pakar Penyakit Ginjal Menggunakan Metode Forward Chaining">
-                    <div class="col subdetail">
-                        <h2><?= $product->nama_p; ?></h2>
-                        <span class="badge badge-pill badge-secondary"><?= $product->namajp; ?></span>
-                    </div>
+                            <a href=""></a>
+                            <button data-toggle="modal" data-target="#exampleModal<?php echo $pos['idpp']; ?>" class="btn btn-warning">ORDER</button>
+                        </div>
 
-                    <div class="col subdetail2">
-                        <hr>
-                        <p><i class="fas fa-user-shield"></i> Berikan Akses Product Kepada <span class="badge badge-danger" id="abc"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nomor Yang Bisa Dihubungi <span class="badge badge-danger" id="def"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nama Lengkap <span class="badge badge-danger" id="hij"></span> </p>
+
 
 
                     </div>
 
 
 
-                </div>
-                <div class="col-lg shadow-lg detailproduct rounded ">
-                    <img src="<?= $product->url_img; ?>" alt="Sistem Pakar Penyakit Ginjal Menggunakan Metode Forward Chaining">
-                    <div class="col subdetail">
-                        <h2><?= $product->nama_p; ?></h2>
-                        <span class="badge badge-pill badge-secondary"><?= $product->namajp; ?></span>
-                    </div>
-
-                    <div class="col subdetail2">
-                        <hr>
-                        <p><i class="fas fa-user-shield"></i> Berikan Akses Product Kepada <span class="badge badge-danger" id="abc"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nomor Yang Bisa Dihubungi <span class="badge badge-danger" id="def"></span> </p>
-                        <p><i class="fas fa-user-shield"></i> Nama Lengkap <span class="badge badge-danger" id="hij"></span> </p>
 
 
-                    </div>
+                <?php endforeach ?>
 
 
-
-                </div>
                 <!-- END DETAIL -->
 
-                <!-- START PEMBAYARAN -->
-                <!-- <div class="col-lg-3 shadow-lg pembayaran ">
-                    <form action="<?= base_url('welcome/insert') ?>" method="post">
-                        <h1>PEMBAYARAN</h1>
-                        <div class="row">
-                            <div class="col">
-                                <p class="small">Harga Produk : <b>Rp. <?= $product->harga_p; ?></b></span>
-                                    <input type="text" name="harga_p" hidden value="<?= $product->harga_p; ?>" id="harga">
 
-                            </div>
-                        </div>
-                        <hr>
-                        <div class="row">
-                            <div class="col">
-                                <p>Support</p>
-                                <select name="support" lass="custom-select">
-                                    <option value="150.000">1 Bulan <span>Rp. 150.000</span></option>
-                                    <option value="250.000">2 Bulan <span>Rp. 300.000</span></option>
-                                    <option value="250.000">3 Bulan <span>Rp. 250.000</span></option>
-                                    <option>-</option>
-                                </select>
-                                <hr>
-                                <input type="text" hidden name="idp" value="<?= $product->idp; ?>">
-                                <input type="text" hidden name="nama_p" value="<?= $product->nama_p; ?>">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fas fa-envelope"></i></div>
-                                    </div>
-
-                                    <input class="form-control" type="email" name="email" id="email" placeholder="E- Mail">
-                                </div>
-                                <hr>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fab fa-whatsapp-square"></i></div>
-                                    </div>
-                                    <input class="form-control" type="text" name="telpon" id="telpon" placeholder="Telpon">
-                                </div>
-                                <hr>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <div class="input-group-text"><i class="fas fa-user-tag"></i></div>
-                                    </div>
-                                    <input class="form-control" type="text" name="nama_lengkap" id="nama" placeholder="Nama Lengkap">
-                                </div>
-
-
-
-
-                            </div>
-
-                            <button type="submit" id="cd" class="btn btn-warning">LANJUTKAN PEMBAYARAN</button>
-                        </div>
-                    </form>
-                </div> -->
-                <!-- END PEMBAYARAN -->
 
 
             </div>
@@ -190,6 +110,9 @@
         </div>
 
     </section>
+
+
+
 
     <!-- END CHECKOUT DETAIL -->
 
@@ -213,6 +136,66 @@
         </div>
     </footer>
 
+
+    <?php foreach ($post as $row) : ?>
+        <!-- Modal -->
+        <div style="z-index: 999999999" class="modal fade" id="exampleModal<?php echo $row['idpp']; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><?= $product->nama_p; ?></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form method="post" action="<?= base_url('welcome/insert');  ?>">
+                        <div class="modal-body">
+
+                            <div class="form-group">
+                                <img height="100px" src="<?= $product->url_img; ?>" alt="<?= $product->nama_p; ?>">
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <input type="text" hidden class="form-control" value="<?= $row['nama_pp']; ?>" name="nama_pp" placeholder="">
+                                <a class="badge badge-warning"><?= $row['nama_pp']; ?></a> Price : <?= $row['harga_total']; ?>
+
+                                <input type="text" name="harga_p" hidden value="<?= $product->harga_p; ?>" id="harga_p">
+                                <input type="text" hidden name="idp" value="<?= $product->idp; ?>">
+                                <input type="text" hidden name="nama_p" value="<?= $product->nama_p; ?>">
+                                <input type="text" hidden name="idpp" value="<?php echo $row['idpp']; ?>">
+                                <input type="text" hidden name="harga_total" value="<?php echo $row['harga_total']; ?>">
+                            </div>
+
+
+
+
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="telpon" name="telpon" placeholder="nomor WhatsApp">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="E - Mail">
+                            </div>
+
+                        </div>
+
+                        <div class="modal-footer">
+
+                            <button type="submit" class="btn btn-warning">ORDER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <?php endforeach ?>
 
     <!-- END FOOTER -->
     <!-- Optional JavaScript -->
