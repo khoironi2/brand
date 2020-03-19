@@ -87,6 +87,44 @@
 
 
                 </div>
+                <div class="col-lg shadow-lg detailproduct rounded ">
+                    <img src="<?= $product->url_img; ?>" alt="Sistem Pakar Penyakit Ginjal Menggunakan Metode Forward Chaining">
+                    <div class="col subdetail">
+                        <h2><?= $product->nama_p; ?></h2>
+                        <span class="badge badge-pill badge-secondary"><?= $product->namajp; ?></span>
+                    </div>
+
+                    <div class="col subdetail2">
+                        <hr>
+                        <p><i class="fas fa-user-shield"></i> Berikan Akses Product Kepada <span class="badge badge-danger" id="abc"></span> </p>
+                        <p><i class="fas fa-user-shield"></i> Nomor Yang Bisa Dihubungi <span class="badge badge-danger" id="def"></span> </p>
+                        <p><i class="fas fa-user-shield"></i> Nama Lengkap <span class="badge badge-danger" id="hij"></span> </p>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg shadow-lg detailproduct rounded ">
+                    <img src="<?= $product->url_img; ?>" alt="Sistem Pakar Penyakit Ginjal Menggunakan Metode Forward Chaining">
+                    <div class="col subdetail">
+                        <h2><?= $product->nama_p; ?></h2>
+                        <span class="badge badge-pill badge-secondary"><?= $product->namajp; ?></span>
+                    </div>
+
+                    <div class="col subdetail2">
+                        <hr>
+                        <p><i class="fas fa-user-shield"></i> Berikan Akses Product Kepada <span class="badge badge-danger" id="abc"></span> </p>
+                        <p><i class="fas fa-user-shield"></i> Nomor Yang Bisa Dihubungi <span class="badge badge-danger" id="def"></span> </p>
+                        <p><i class="fas fa-user-shield"></i> Nama Lengkap <span class="badge badge-danger" id="hij"></span> </p>
+
+
+                    </div>
+
+
+
+                </div>
                 <!-- END DETAIL -->
 
                 <!-- START PEMBAYARAN -->
