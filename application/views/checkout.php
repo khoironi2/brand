@@ -128,7 +128,7 @@
                 <!-- END DETAIL -->
 
                 <!-- START PEMBAYARAN -->
-                <div class="col-lg-3 shadow-lg pembayaran ">
+                <!-- <div class="col-lg-3 shadow-lg pembayaran ">
                     <form action="<?= base_url('welcome/insert') ?>" method="post">
                         <h1>PEMBAYARAN</h1>
                         <div class="row">
@@ -181,7 +181,7 @@
                             <button type="submit" id="cd" class="btn btn-warning">LANJUTKAN PEMBAYARAN</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
                 <!-- END PEMBAYARAN -->
 
 
